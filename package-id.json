@@ -1,0 +1,8 @@
+{
+"id":"biomesmod",
+"name":"Biomes test mod for 1.1.0-beta1",
+"description":"new biomes",
+"author":"stl1988",
+"versionNumber":"1.0",
+"enabled":true
+}

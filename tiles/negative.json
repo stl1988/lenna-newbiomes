@@ -1,0 +1,6 @@
+{
+  "id": "negative",
+  "image": "/tiles/overworld1negative32.png",
+  "base": "/tiles/base.png",
+  "coloringMethod": "colorize"
+}

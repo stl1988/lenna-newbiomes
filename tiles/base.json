@@ -1,0 +1,6 @@
+{
+  "id": "base",
+  "image": "/tiles/base.png",
+  "base": "/tiles/base.png",
+  "coloringMethod": "colorize"
+}

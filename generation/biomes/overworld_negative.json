@@ -1,0 +1,11 @@
+{
+  "base": "overworld",
+  "name": "negative",
+  "music": "jungle",
+  "plainslike": true,
+  "replacedByMountain": true,
+  "tilesheet": "negative",
+  "hasRoads": true,
+
+  "mapIconColor": ["0x000", "0x555", "0x444", "0x222"]
+}

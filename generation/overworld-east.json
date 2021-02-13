@@ -1,0 +1,82 @@
+{
+  "map" : {
+    "width" : 10,
+    "height" : 10,
+    "descriptionKey": "ui/locations:island_e"
+  },
+
+  "biomes" : {
+    "default": ["overworld_blossom", "overworld_autumn", "overworld_winter", "overworld_plains", "overworld_graveyard", "overworld_test"],
+    "keyed": [
+      {
+        "biome": "overworld_glitch",
+        "keyLevel": 8
+      }
+    ],
+    "landmarked" : [
+{
+        "biome" : ["overworld_blossom", "overworld_autumn", "overworld_winter", "overworld_plains", "overworld_graveyard", "overworld_test", "overworld_negative"],
+        "landmark" : 4,
+        "radius" : 44
+      },
+{
+        "biome" : ["overworld_blossom", "overworld_autumn", "overworld_winter", "overworld_plains", "overworld_graveyard", "overworld_test", "overworld_negative"],
+        "landmark" : 5,
+        "radius" : 44
+      },
+      {
+        "biome" : ["overworld_blossom", "overworld_autumn", "overworld_winter", "overworld_plains", "overworld_graveyard", "overworld_test", "overworld_negative"],
+        "landmark" : 6,
+        "radius" : 1
+      }
+    ]
+  },
+
+  "bridges" : [
+    {
+      "side" : "w",
+      "warp" : "scene:*-overworld-west-east-bridge:east",
+      "keyLevel" : 0
+    }
+  ],
+
+  "reservations" : [
+    {
+      "rect" : [100, 0, 100, 88],
+      "keyLevel" : 8
+    }
+  ],
+
+  "music" : "overworld_east",
+
+  "lowestDungeon" : 4,
+
+  "objects" : {
+    "dungeons" : [
+      ["net.bytten.inceptus.generator.overworld.importantobjs.DungeonEntranceImpObj", 4],
+      ["net.bytten.inceptus.generator.overworld.importantobjs.DungeonEntranceImpObj", 5],
+      ["net.bytten.inceptus.generator.overworld.importantobjs.DungeonEntranceImpObj", 6],
+      ["net.bytten.inceptus.generator.overworld.importantobjs.LaboratoryImpObj", 7]
+    ],
+    "other" : [
+      ["net.bytten.inceptus.generator.overworld.importantobjs.BridgeImpObj", {
+        "tmx" : "/tmx/objects/bridge-e.json",
+        "targetMap" : "map:*-bridge",
+        "targetScene" : "scene:*-bridge:entry-east",
+        "positionBias" : "w"
+      }],
+      ["net.bytten.inceptus.generator.overworld.importantobjs.PalaceImpObj", 8],
+      ["net.bytten.inceptus.generator.overworld.importantobjs.DungeonEntranceImpObj", 7],
+      ["net.bytten.inceptus.generator.overworld.importantobjs.TravellingMerchantImpObj", 0],
+      ["net.bytten.inceptus.generator.overworld.importantobjs.TravellingMerchantImpObj", 1],
+      ["net.bytten.inceptus.generator.overworld.importantobjs.TravellingMerchantImpObj", 2],
+      ["net.bytten.inceptus.generator.overworld.importantobjs.TravellingMerchantImpObj", 3],
+      ["net.bytten.inceptus.generator.overworld.importantobjs.TraderImpObj", 5],
+      ["net.bytten.inceptus.generator.overworld.importantobjs.TraderImpObj", 6],
+      ["net.bytten.inceptus.generator.overworld.importantobjs.HammysHouseImpObj"],
+      ["net.bytten.inceptus.generator.overworld.importantobjs.StatusEffectStoreImpObj"],
+      ["net.bytten.inceptus.generator.overworld.importantobjs.BattleArenaImpObj"],
+      ["net.bytten.inceptus.generator.overworld.importantobjs.WoodcutterImpObj"]
+    ]
+  }
+}

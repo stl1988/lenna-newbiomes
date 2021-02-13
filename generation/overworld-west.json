@@ -1,0 +1,78 @@
+{
+  "map" : {
+    "width" : 10,
+    "height" : 10,
+    "descriptionKey": "ui/locations:island_w"
+  },
+
+  "biomes" : {
+    "default": ["overworld_blossom", "overworld_autumn", "overworld_winter", "overworld_plains", "overworld_graveyard", "overworld_test"],
+    "landmarked" : [
+{
+        "biome" : ["overworld_blossom","overworld_plains"],
+        "landmark" : 0,
+        "radius" : 33
+      },
+{
+        "biome" : ["overworld_blossom", "overworld_autumn", "overworld_winter", "overworld_plains", "overworld_graveyard", "overworld_test", "overworld_negative"],
+        "landmark" : 1,
+        "radius" : 33
+      },
+{
+        "biome" : ["overworld_blossom", "overworld_autumn", "overworld_winter", "overworld_plains", "overworld_graveyard", "overworld_test", "overworld_negative"],
+        "landmark" : 2,
+        "radius" : 33
+      },
+{
+        "biome" : ["overworld_blossom", "overworld_autumn", "overworld_winter", "overworld_plains", "overworld_graveyard", "overworld_test", "overworld_negative"],
+        "landmark" : 3,
+        "radius" : 44
+      },
+      {
+        "biome" : ["overworld_blossom", "overworld_autumn", "overworld_winter", "overworld_plains", "overworld_graveyard", "overworld_test", "overworld_negative"],
+        "landmark" : 4,
+        "radius" : 55
+      }
+    ]
+  },
+
+  "bridges" : [
+    {
+      "side" : "e",
+      "warp" : "scene:*-overworld-west-east-bridge:west",
+      "keyLevel" : 4
+    }
+  ],
+
+  "music" : "overworld_west",
+
+  "lowestDungeon" : 0,
+
+  "objects" : {
+    "dungeons" : [
+      ["net.bytten.inceptus.generator.overworld.importantobjs.DungeonEntranceImpObj", 0],
+      ["net.bytten.inceptus.generator.overworld.importantobjs.DungeonEntranceImpObj", 1],
+      ["net.bytten.inceptus.generator.overworld.importantobjs.DungeonEntranceImpObj", 2],
+      ["net.bytten.inceptus.generator.overworld.importantobjs.GuildBankImpObj", 3]
+    ],
+    "other" : [
+      ["net.bytten.inceptus.generator.overworld.importantobjs.BridgeImpObj", {
+        "tmx" : "/tmx/objects/bridge-w.json",
+        "targetMap" : "map:*-bridge",
+        "targetScene" : "scene:*-bridge:entry-west",
+        "positionBias" : "e"
+      }],
+      ["net.bytten.inceptus.generator.overworld.importantobjs.SchoolImpObj"],
+      ["net.bytten.inceptus.generator.overworld.importantobjs.LibraryImpObj"],
+      ["net.bytten.inceptus.generator.overworld.importantobjs.ElderCaveImpObj"],
+      ["net.bytten.inceptus.generator.overworld.importantobjs.ShadowTempleImpObj"],
+      ["net.bytten.inceptus.generator.overworld.importantobjs.ShopImpObj"],
+      ["net.bytten.inceptus.generator.overworld.importantobjs.DevsHouseImpObj"],
+      ["net.bytten.inceptus.generator.overworld.importantobjs.BearHousesImpObj"],
+      ["net.bytten.inceptus.generator.overworld.importantobjs.TraderImpObj", 0],
+      ["net.bytten.inceptus.generator.overworld.importantobjs.OfficeImpObj"],
+      ["net.bytten.inceptus.generator.overworld.importantobjs.TraderImpObj", 2],
+      ["net.bytten.inceptus.generator.overworld.importantobjs.BearCottageImpObj"]
+    ]
+  }
+}

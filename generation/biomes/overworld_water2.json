@@ -1,0 +1,14 @@
+{
+  "base": "overworld",
+  "name": "waters2",
+  "music": null,
+  "tilesheet": "overworld-beach",
+  "floor": "water",
+  "hasRoads": true,
+
+  "mapIconColor": ["0x000", "0x024", "0x036", "0x555"]
+  
+  
+  
+  
+}
